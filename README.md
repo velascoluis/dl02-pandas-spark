@@ -52,7 +52,10 @@ Change `<YOUR_REGION> <YOUR_ZONE>` accordingly, for example:
 ### Data Analyst
 
 1. Connect to Cloud Console and open Vertex AI Workbench.
+
+![Vertex AI Workbench](assets/02.png)
 2. Open the notebook `pandas-pyspark.ipynb` and select the spark serverless kernel `spark-interactive-<RANDOM>`
+![Spark serverless interactive kernel](assets/03.png)
 3. Execute the notebook, this concludes the Data Analyst part.
 
 ### Data Engineering
@@ -67,7 +70,11 @@ Change `<YOUR_REGION> <YOUR_ZONE>` accordingly, for example:
 ~$ cat dag_conf.json
 ```
 
-2. Connect to Cloud Console and open the Cloud Composer console. 
-3. Look for the pyspark-batch-process DAG, trigger it with config and paste the contents of the `dag_conf.json` file 
+2. Connect to Cloud Console and open the Cloud Composer (Airflow) `data-analytics-demo-composer-2` instance.
+![Open Airflow UI](assets/04.png)
+3. Look for the `batch-process` DAG, and click trigger it with config
+![Open Airflow UI](assets/05.png)
+4. Paste the contents of the `dag_conf.json` file on the text box
+![Paste config](assets/06.png)
 
 
